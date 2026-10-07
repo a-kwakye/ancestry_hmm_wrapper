@@ -1,0 +1,2 @@
+[console_scripts]
+ancestry-pipeline = ancestry_pipeline.cli:main

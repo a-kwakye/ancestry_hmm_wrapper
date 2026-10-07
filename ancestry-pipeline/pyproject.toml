@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ancestry-hmm-pipeline"
+version = "0.2.1"
+description = "Genome-agnostic two- or three-population Ancestry_HMM panel building, parallel inference, summarization, and chromosome painting"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23", "pandas>=1.5", "matplotlib>=3.6"]
+
+[project.scripts]
+ancestry-pipeline = "ancestry_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ancestry_pipeline*"]
